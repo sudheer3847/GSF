@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Scheme Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Government Scheme Finder MVP</h1>
+        <p class="subtitle">Fill out your details below to find matching welfare schemes.</p>
+        
+        <!-- Input 1: Age -->
+        <div class="form-group">
+            <label for="ageInput">Age:</label>
+            <input type="number" id="ageInput" placeholder="e.g., 25">
+        </div>
+
+        <!-- Input 2: Annual Income -->
+        <div class="form-group">
+            <label for="incomeInput">Annual Income (₹):</label>
+            <input type="number" id="incomeInput" placeholder="e.g., 250000">
+        </div>
+
+        <!-- Input 3: Gender -->
+        <div class="form-group">
+            <label for="genderInput">Gender:</label>
+            <select id="genderInput">
+                <option value="">--Select Gender--</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <!-- Input 4: Employment Status -->
+        <div class="form-group">
+            <label for="employmentInput">Employment Status:</label>
+            <select id="employmentInput">
+                <option value="">--Select Status--</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="salaried">Salaried</option>
+                <option value="self-employed">Self-Employed / Business</option>
+                <option value="student">Student</option>
+                <option value="farmer">Farmer</option>
+            </select>
+        </div>
+
+        <!-- Input 5: Social Category -->
+        <div class="form-group">
+            <label for="categoryInput">Social Category:</label>
+            <select id="categoryInput">
+                <option value="">--Select Category--</option>
+                <option value="general">General</option>
+                <option value="obc">OBC</option>
+                <option value="sc">SC</option>
+                <option value="st">ST</option>
+            </select>
+        </div>
+
+        <!-- Input 6: Disability Status -->
+        <div class="form-group">
+            <label for="disabilityInput">Are you a Person with Disability (PwD)?</label>
+            <select id="disabilityInput">
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+        </div>
+
+        <!-- Input 7: State of Residence -->
+        <div class="form-group">
+            <label for="stateInput">State of Residence:</label>
+            <select id="stateInput">
+                <option value="">--Select State--</option>
+                <option value="all">All India / Central</option>
+                <option value="delhi">Delhi</option>
+                <option value="maharashtra">Maharashtra</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="uttar-pradesh">Uttar Pradesh</option>
+                <!-- Add other states as needed -->
+            </select>
+        </div>
+
+        <button onclick="findSchemes()">Find Schemes</button>
+
+        <h2>Eligible Schemes:</h2>
+        <div id="result-box">
+            <p id="result">Please fill out the details above.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
