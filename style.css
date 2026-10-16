@@ -1,9 +1,11 @@
-/* Deep Dark Theme Background */
+/* Background Image with Dark Overlay */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #261613; /* Deep chocolate brown */
-    background-image: radial-gradient(circle at 50% 0%, #3d231e 0%, #261613 100%);
-    color: #e6dfdf;
+    background: linear-gradient(rgba(38, 22, 19, 0.85), rgba(38, 22, 19, 0.85)), 
+                url('https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     margin: 0;
     padding: 20px;
     display: flex;
@@ -14,11 +16,11 @@ body {
 
 /* Main Dark Glass Card Container */
 .container {
-    background: #311c18; /* Slightly lighter brown card */
+    background: #311c18; /* Your exact chocolate brown card */
     border: 1px solid #4a2822;
     padding: 35px;
     border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
     width: 100%;
     max-width: 480px;
     box-sizing: border-box;
@@ -26,7 +28,7 @@ body {
 
 /* Elegant Title Styling with Orange Accent */
 h1 {
-    font-size: 26px;
+    font-size: 24px;
     color: #ffffff;
     margin-bottom: 6px;
     text-align: center;
@@ -62,7 +64,7 @@ input, select {
     border-radius: 10px;
     box-sizing: border-box;
     font-size: 14px;
-    background-color: #21110f; /* Darker input background */
+    background-color: #21110f;
     color: #ffffff;
     transition: all 0.3s ease;
 }
@@ -125,5 +127,5 @@ h2 {
     min-height: 60px;
     max-height: 200px;
     overflow-y: auto;
-    color: #ffb09c; /* Soft warm orange text for content */
+    color: #ffb09c;
 }
