@@ -1,7 +1,9 @@
-/* General Page Styling */
+/* Deep Dark Theme Background */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-color: #261613; /* Deep chocolate brown */
+    background-image: radial-gradient(circle at 50% 0%, #3d231e 0%, #261613 100%);
+    color: #e6dfdf;
     margin: 0;
     padding: 20px;
     display: flex;
@@ -10,34 +12,36 @@ body {
     min-height: 100vh;
 }
 
-/* Main Container Card */
+/* Main Dark Glass Card Container */
 .container {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background: #311c18; /* Slightly lighter brown card */
+    border: 1px solid #4a2822;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     width: 100%;
-    max-width: 450px;
+    max-width: 480px;
     box-sizing: border-box;
 }
 
-/* Header Styling */
+/* Elegant Title Styling with Orange Accent */
 h1 {
-    font-size: 24px;
-    color: #1e3c72;
-    margin-bottom: 8px;
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 6px;
     text-align: center;
     font-weight: 700;
+    letter-spacing: -0.5px;
 }
 
 .subtitle {
-    font-size: 14px;
-    color: #6c757d;
+    font-size: 13px;
+    color: #b09c97;
     margin-bottom: 25px;
     text-align: center;
 }
 
-/* Form Fields */
+/* Form Fields Setup */
 .form-group {
     text-align: left;
     margin-bottom: 16px;
@@ -46,49 +50,56 @@ h1 {
 label {
     font-weight: 600;
     font-size: 13px;
-    color: #495057;
+    color: #d1c4c1;
     display: block;
     margin-bottom: 6px;
 }
 
 input, select {
     width: 100%;
-    padding: 10px 12px;
-    border: 1px solid #ced4da;
-    border-radius: 8px;
+    padding: 12px 14px;
+    border: 1px solid #4a2822;
+    border-radius: 10px;
     box-sizing: border-box;
     font-size: 14px;
-    background-color: #f8f9fa;
+    background-color: #21110f; /* Darker input background */
+    color: #ffffff;
     transition: all 0.3s ease;
 }
 
-/* Glow effect when clicking inputs */
+/* Focus Glow (Orange Accent) */
 input:focus, select:focus {
-    border-color: #4facfe;
-    background-color: #fff;
+    border-color: #ff5e36;
+    background-color: #261613;
     outline: none;
-    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+    box-shadow: 0 0 10px rgba(255, 94, 54, 0.3);
 }
 
-/* Colorful Gradient Button */
+/* Dropdown Option Colors Fix */
+option {
+    background-color: #261613;
+    color: #ffffff;
+}
+
+/* Striking Orange Action Button */
 button {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(135deg, #ff5e36 0%, #e64a19 100%);
     color: white;
     border: none;
-    padding: 12px;
+    padding: 14px;
     width: 100%;
     font-size: 16px;
-    font-weight: 600;
-    border-radius: 8px;
+    font-weight: 700;
+    border-radius: 10px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 15px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.4);
+    box-shadow: 0 4px 15px rgba(255, 94, 54, 0.4);
 }
 
 button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(79, 172, 254, 0.6);
+    box-shadow: 0 6px 20px rgba(255, 94, 54, 0.6);
 }
 
 button:active {
@@ -97,20 +108,22 @@ button:active {
 
 /* Results Section */
 h2 {
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 25px;
-    color: #343a40;
-    text-align: center;
+    color: #ffffff;
+    text-align: left;
+    border-bottom: 1px solid #4a2822;
+    padding-bottom: 8px;
 }
 
 #result-box {
-    background: #f1f8ff;
-    border: 1px solid #c8e1ff;
+    background: #21110f;
+    border: 1px solid #4a2822;
     padding: 15px;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-top: 10px;
     min-height: 60px;
     max-height: 200px;
     overflow-y: auto;
-    color: #0366d6;
+    color: #ffb09c; /* Soft warm orange text for content */
 }
