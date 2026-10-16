@@ -1,10 +1,16 @@
-/* Background Image with Dark Overlay */
+/* Background: India Gate Image + Custom Doodle Pattern Overlay */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(rgba(38, 22, 19, 0.85), rgba(38, 22, 19, 0.85)), 
-                url('https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1920&q=80');
-    background-size: cover;
-    background-position: center;
+    background-color: #261613;
+    background-image: 
+        /* Doodle Pattern Overlay using SVG icons */
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ff5e36' fill-opacity='0.08' fill-rule='evenodd'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E"),
+        /* Dark Tint Layer */
+        linear-gradient(rgba(38, 22, 19, 0.85), rgba(38, 22, 19, 0.85)), 
+        /* India Gate Image */
+        url('https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1920&q=80');
+    background-size: auto, cover, cover;
+    background-position: center, center, center;
     background-attachment: fixed;
     margin: 0;
     padding: 20px;
@@ -16,7 +22,8 @@ body {
 
 /* Main Dark Glass Card Container */
 .container {
-    background: #311c18; /* Your exact chocolate brown card */
+    background: rgba(49, 28, 24, 0.95);
+    backdrop-filter: blur(10px);
     border: 1px solid #4a2822;
     padding: 35px;
     border-radius: 20px;
